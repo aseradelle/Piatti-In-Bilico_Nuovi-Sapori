@@ -1,9 +1,11 @@
 Pagine finora finite e quelle ancora da completare.
 Si rifà allo scheletro del progetto.
-Menù a tendina -> eliminare le scritte vicino all'icona, compariranno con un muose over
-Homepage -> finita ma da correggere la centratura della mappa (inserire la via corretta)
-Menù -> quasi completato. Mancano gli ultimi accorgimenti
+Menù a tendina -> fatto
+Homepage -> finita ma inserire la via corretta
+Menù -> completato
 Tavoli -> da fare completamente ma con schizzo già fatto
 Ordini -> da fare completamente
-Feedback -> da fare completamente
-Login -> da fare completamente
+Feedback -> completato
+Login -> completato
+Fare un check-up generale per il database con dovute prove.
+Rivedere il css delle pagine per adattare al meglio gli elementi
