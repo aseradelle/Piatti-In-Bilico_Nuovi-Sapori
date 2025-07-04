@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inserire nome sito</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="" type="image/png"/>
+    <script src="jsProvaRegistrazione.js"></script>
+    <link rel="stylesheet" href="cssProvaLoginRegistrazione.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+  
+    <div class="contenitore-generale">
+      <div class="contenitore-unTerzo">
+        <div class="sidebar-info">
+          <a href="#" class="logo">
+            <img src="../img/Brown_Simple_Circle_Restaurant_Logo__1_-removebg-preview.png" alt="Logo del ristorante">
+            <span>Piatti in Bilico</span>
+          </a>
+          <div class="menu">
+            <a href="../HomePage.html">
+                <span class="icon">
+                    <i class="ri-home-line"></i>
+                </span>
+                HomePage
+            </a>
+            <a href="./Menu.html">
+                <span class="icon">
+                    <i class="ri-restaurant-2-line"></i>
+                </span>
+                Menù
+            </a>
+            <a href="./Tavoli.html">
+                <span class="icon">
+                    <i class="ri-table-line"></i>
+                </span>
+                Tavoli
+            </a>
+            <a href="./Ordini.php">
+              <span class="icon">
+                <i class="ri-shopping-cart-line"></i>
+              </span>
+              Ordini
+            </a>
+            <a href="./Feedback.html">
+              <span class="icon">
+                  <i class="ri-feedback-line"></i>
+              </span>
+              Feedback
+            </a>
+            <a class="active "href="#">
+                <span class="icon">
+                    <i class="ri-login-box-line"></i>
+                </span>
+                Registrazione
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contenitore-dueTerzi">
+        <div class="w3-main w3-padding-large">
+            <div class="w3-content w3-padding-32" id="storia">
+                <h1>Menù</h1>
+                <hr>
+                <div class="formFrame">
+                  <h2 class="titoletto">Pagina di registrazione</h2>
+                  <h2 class="title">Inserisci le credenziali per registrarti come utente:</h2>
+                  <!--Il div "credenziali" contiene due campi nei quali inserire i dati (username/email e password). I dati vengono inviati tramite il metodo POST-->
+                  <div class="credenziali">
+                    <!--Invia alla "phpPag_Registrazione.php" il contenuto dei campi-->
+                    <form id="registrationForm" method="POST" action="phpProvaRegistrazione.php">
+                      <!--Con questo input fornisco alla "phpPag_Login.php" tramite il post le informazioni necessarie per prelevare il proprio contenuto-->
+                      <!--Il placeholder è un vincolo, sottoforma di scritta, che indica cosa devo inserire nel campo. Required, indica che è richiesto quindi compilato per forza-->
+                      <input type="text" name="username" id="usernameInput" placeholder="Username" required>
+                      <!--Div con il quale richiamo il messaggio di errore inerente all'username-->
+                      <div id="usernameError" class="error-message"></div>
+                      <input type="email" name="email" id="emailInput" placeholder="Email" required>
+                      <!--Div con il quale richiamo il messaggio di errore inerente all'email-->
+                      <div id="emailError" class="error-message"></div>
+                      <div class="password-container">
+                        <input type="password" name="password" id="passwordInput" placeholder="Password" required>
+                          <!--Ha lo scopo di far visualizzare, insieme ad una pagina JavaScript, la password premendo 👁️. Lo si può fare molteplici volte-->
+                          <!--&#128065 è l'unicode per 👁️-->
+                        <span class="password-toggle" onclick="togglePasswordVisibility()">&#128065;</span>
+                      </div>
+                      <!--Div con il quale richiamo il messaggio di errore inerente alla password-->
+                      <div id="passwordError" class="error-message"></div>
+                      <button class="bottoneNuovoUtente" type="button" onclick="checkInputs()">Registrati</button>
+                    </form>
+                  </div>
+                  <div id="outputText" class="error-message"></div>
+              </div>
+            </div>
+        </div>
+        <footer class="w3-round w3-container w3-padding-32 w3-center">© Anno di sviluppo della pagina e proprietario del locale. Tutti i diritti riservati. Poi inserire i contatti</footer>
+      </div>
+      <script src="jsProva.js"></script>
+    </div>
+  </body>
+</html>

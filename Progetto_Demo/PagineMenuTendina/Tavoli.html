@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inserire nome sito - Menù</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/Brown_Simple_Circle_Restaurant_Logo__1_-removebg-preview.png" type="image/png"/>
+    <link rel="stylesheet" href="cssProvaTavoli.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+  
+    <div class="contenitore-generale">
+      <div class="contenitore-unTerzo">
+        <div class="sidebar-info">
+          <a href="#" class="logo">
+            <img src="../img/Brown_Simple_Circle_Restaurant_Logo__1_-removebg-preview.png" alt="Logo del ristorante">
+            <span>Piatti in Bilico</span>
+          </a>
+          <div class="menu">
+            <a href="../HomePage.html">
+                <span class="icon">
+                    <i class="ri-home-line"></i>
+                </span>
+                HomePage
+            </a>
+            <a href="./Menu.html">
+                <span class="icon">
+                    <i class="ri-restaurant-2-line"></i>
+                </span>
+                Menù
+            </a>
+            <a class="active" href="#">
+                <span class="icon">
+                    <i class="ri-table-line"></i>
+                </span>
+                Tavoli
+            </a>
+            <a href="./Ordini.php">
+              <span class="icon">
+                <i class="ri-shopping-cart-line"></i>
+              </span>
+              Ordini
+            </a>
+            <a href="../PagineMenuTendina/Feedback.html">
+              <span class="icon">
+                  <i class="ri-feedback-line"></i>
+              </span>
+              Feedback
+            </a>
+            <a href="../PagineMenuTendina/Login.html">
+                <span class="icon">
+                    <i class="ri-login-box-line"></i>
+                </span>
+                Login
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contenitore-dueTerzi">
+        <div class="w3-main w3-padding-large">
+            <div class="w3-content w3-padding-32" id="storia">
+                <h1>Tavoli disponibili</h1>
+                <hr>
+                <div class="piantina">
+    <!-- Tavoli rettangolari lunghi -->
+    <img src="../img/Pagina_Tavolo/Tavolo.png" 
+         alt="Tavolo Rettangolare 1" 
+         class="tavolo rettangolare" 
+         data-id="1" 
+         data-status="libero" 
+         data-posti="6" 
+         style="top: 20px; left: 50px;" />
+
+    <img src="../img/Pagina_Tavolo/Tavolo.png" 
+         alt="Tavolo Rettangolare 2" 
+         class="tavolo rettangolare" 
+         data-id="2" 
+         data-status="occupato" 
+         data-posti="6" 
+         style="top: 150px; left: 50px;" />
+
+    <img src="../img/Pagina_Tavolo/Tavolo.png" 
+         alt="Tavolo Rettangolare 3" 
+         class="tavolo rettangolare" 
+         data-id="3" 
+         data-status="libero" 
+         data-posti="8" 
+         style="top: 280px; left: 50px;" />
+
+    <img src="../img/Pagina_Tavolo/Tavolo.png" 
+         alt="Tavolo Rettangolare 4" 
+         class="tavolo rettangolare" 
+         data-id="4" 
+         data-status="libero" 
+         data-posti="10" 
+         style="top: 410px; left: 50px;" />
+
+    <!-- Tavoli rotondi piccoli -->
+    <img src="../img/Pagina_Tavolo/Tavolo_Piccolo.png" 
+         alt="Tavolo Rotondo Piccolo 1" 
+         class="tavolo rotondo piccolo" 
+         data-id="5" 
+         data-status="occupato" 
+         data-posti="4" 
+         style="top: 100px; left: 300px;" />
+
+    <img src="../img/Pagina_Tavolo/Tavolo_Piccolo.png" 
+         alt="Tavolo Rotondo Piccolo 2" 
+         class="tavolo rotondo piccolo" 
+         data-id="6" 
+         data-status="libero" 
+         data-posti="4" 
+         style="top: 250px; left: 300px;" />
+
+    <img src="../img/Pagina_Tavolo/Tavolo_Piccolo.png" 
+         alt="Tavolo Rotondo Piccolo 3" 
+         class="tavolo rotondo piccolo" 
+         data-id="7" 
+         data-status="libero" 
+         data-posti="4" 
+         style="top: 400px; left: 300px;" />
+
+    <!-- Tavoli rotondi grossi -->
+    <img src="../img/Pagina_Tavolo/Tavolo_Grande.png" 
+         alt="Tavolo Rotondo Grosso 1" 
+         class="tavolo rotondo grosso" 
+         data-id="8" 
+         data-status="occupato" 
+         data-posti="8" 
+         style="top: 80px; left: 500px;" />
+
+    <img src="../img/Pagina_Tavolo/Tavolo_Grande.png" 
+         alt="Tavolo Rotondo Grosso 2" 
+         class="tavolo rotondo grosso" 
+         data-id="9" 
+         data-status="libero" 
+         data-posti="8" 
+         style="top: 250px; left: 500px;" />
+
+    <img src="../img/Pagina_Tavolo/Tavolo_Grande.png" 
+         alt="Tavolo Rotondo Grosso 3" 
+         class="tavolo rotondo grosso" 
+         data-id="10" 
+         data-status="libero" 
+         data-posti="8" 
+         style="top: 400px; left: 500px;" />
+  </div>
+
+  <!-- Modale -->
+  <div class="modal" id="tavoloModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="statusIndicator"></div>
+      <p id="modalTitle"></p>
+      <p>Posti disponibili: <span id="postiDisponibili"></span></p>
+      <label>Quanti posti prenotare:
+        <input type="number" id="postiPrenotare" min="1" value="1">
+      </label>
+      <br/><br/>
+      <label>Nome:
+        <input type="text" id="nomePrenotazione" />
+      </label>
+      <br/><br/>
+      <label>Email:
+        <input type="email" id="emailPrenotazione" />
+      </label>
+      <br/><br/>
+      <button id="confermaPrenotazione">Conferma Prenotazione</button>
+    </div>
+  </div>
+              </div>
+            </div>
+        <footer class="w3-round w3-container w3-padding-32 w3-center">© Anno di sviluppo della pagina e proprietario del locale. Tutti i diritti riservati. Poi inserire i contatti</footer>
+      </div>
+      <script src="jsProvaTavoli.js"></script>
+    </div>
+  </body>
+</html>

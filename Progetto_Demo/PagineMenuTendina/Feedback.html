@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inserire nome sito - Menù</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/Brown_Simple_Circle_Restaurant_Logo__1_-removebg-preview.png" type="image/png"/>
+    <link rel="stylesheet" href="cssProvaFeedback.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+  
+    <div class="contenitore-generale">
+      <div class="contenitore-unTerzo">
+        <div class="sidebar-info">
+          <a href="#" class="logo">
+            <img src="../img/Brown_Simple_Circle_Restaurant_Logo__1_-removebg-preview.png" alt="Logo del ristorante">
+            <span>Piatti in Bilico</span>
+          </a>
+          <div class="menu">
+            <a href="../HomePage.html">
+                <span class="icon">
+                    <i class="ri-home-line"></i>
+                </span>
+                HomePage
+            </a>
+            <a href="../PagineMenuTendina/Menu.html">
+                <span class="icon">
+                    <i class="ri-restaurant-2-line"></i>
+                </span>
+                Menù
+            </a>
+            <a href="../PagineMenuTendina/Tavoli.html">
+                <span class="icon">
+                    <i class="ri-table-line"></i>
+                </span>
+                Tavoli
+            </a>
+            <a href="./Ordini.php">
+              <span class="icon">
+                <i class="ri-shopping-cart-line"></i>
+              </span>
+              Ordini
+            </a>
+            <a class="active" href="#">
+              <span class="icon">
+                  <i class="ri-feedback-line"></i>
+              </span>
+              Feedback
+            </a>
+            <a href="../PagineMenuTendina/Login.html">
+                <span class="icon">
+                    <i class="ri-login-box-line"></i>
+                </span>
+                Login
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contenitore-dueTerzi">
+        <div class="w3-main w3-padding-large">
+            <div class="w3-content w3-padding-32" id="storia">
+                <h1>Feedback</h1>
+                <hr>
+                <form>
+                    <div class="w3-row w3-padding-32">
+                        <br> 
+                        <form id="submit_form"> 
+                            <div class="w3-row-padding" style="margin:0 -16px 8px -16px"> 
+                                <div class="w3-half"> 
+                                    <input type="text" name="name" id="name" placeholder="Name" class="form-control w3-input w3-border" /> 
+                                </div> 
+                                <div class="w3-half"> 
+                                    <input type="text" name="email" id="email" placeholder="Email"class="form-control w3-input w3-border" /> 
+                                </div> 
+                            </div> 
+                            <textarea name="message" id="message" class="form-control" placeholder=" Scrivi una recensione per aiutarci a migliorare! "></textarea> 
+                            <input type="button" name="submit" id="submit" class="btn btn-info w3-button w3-black w3-section w3-right" value="Invia" /> 
+                            <span id="error_message" class="text-danger"></span> 
+                            <span id="success_message" class="text-success"></span>
+                        </form> 
+                    </div>
+                </form>
+              </div>
+            </div>
+            <footer class="w3-round w3-container w3-padding-32 w3-center">© Anno di sviluppo della pagina e proprietario del locale. Tutti i diritti riservati. Poi inserire i contatti</footer>
+        </div>
+      <script src="jsProvaMenu.js"></script>
+    </div>
+  </body>
+</html>
