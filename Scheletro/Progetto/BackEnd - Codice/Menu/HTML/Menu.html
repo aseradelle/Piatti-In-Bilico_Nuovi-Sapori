@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inserire nome sito - Menù</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="" type="image/png"/>
+    <link rel="stylesheet" href="cssProvaMenu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+  
+    <div class="contenitore-generale">
+      <div class="contenitore-unTerzo">
+        <div class="sidebar-info">
+          <a href="#" class="logo">
+            <img src="" alt="Logo del ristorante">
+            <span>Nome del ristorante</span>
+          </a>
+          <div class="menu">
+            <a href="../HomePage.html">
+                <span class="icon">
+                    <i class="ri-home-line"></i>
+                </span>
+                HomePage
+            </a>
+            <a class="active" href="#">
+                <span class="icon">
+                    <i class="ri-restaurant-2-line"></i>
+                </span>
+                Menù
+            </a>
+            <a href="./pagineSito/Campionato.html">
+                <span class="icon">
+                    <i class="ri-table-line"></i>
+                </span>
+                Tavoli
+            </a>
+            <a href="#">
+              <span class="icon">
+                <i class="ri-shopping-cart-line"></i>
+              </span>
+              Ordini
+            </a>
+            <a href="./pagineSito/Modulo.html">
+              <span class="icon">
+                  <i class="ri-feedback-line"></i>
+              </span>
+              Feedback
+            </a>
+            <a href="./pagineSito/Storiografia.html">
+                <span class="icon">
+                    <i class="ri-login-box-line"></i>
+                </span>
+                Login
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contenitore-dueTerzi">
+        <div class="w3-main w3-padding-large">
+            <div class="w3-content w3-padding-32" id="storia">
+                <h1>Menù</h1>
+                <hr>
+                <div class="menu-book-container">
+                  <div class="menu-page" id="pageContainer">
+                    <img src="../ImmaginiPagineMenu/Antipasti.png" class="menu-background" id="backgroundImage" alt="Sfondo Menu">
+
+                    <div class="menu-content">
+                      <!-- 8 piatti -->
+                      <div class="dish-slot" data-index="0">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+                      <div class="dish-slot" data-index="1">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+                      <div class="dish-slot" data-index="2">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+                      <div class="dish-slot" data-index="3">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+                      <div class="dish-slot" data-index="4">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+                      <div class="dish-slot" data-index="5">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+                      <div class="dish-slot" data-index="6">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+                      <div class="dish-slot" data-index="7">
+                        <img class="dish-image">
+                        <div class="dish-description"></div>
+                      </div>
+
+                      <!-- freccia -->
+                      <button class="next-page-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal Allergeni -->
+                <div class="allergen-modal" id="allergenModal">
+                  <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>Allergeni</h2>
+                  <div class="modal-body">
+                    <img id="allergen-dish-image" src="" alt="Piatto" />
+                    <div class="modal-text">
+                      <div id="allergen-icons"></div>
+                      <div id="allergen-description"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <footer class="w3-round w3-container w3-padding-32 w3-center">© Anno di sviluppo della pagina e proprietario del locale. Tutti i diritti riservati. Poi inserire i contatti</footer>
+      </div>
+      <script src="jsProvaMenu.js"></script>
+    </div>
+  </body>
+</html>
