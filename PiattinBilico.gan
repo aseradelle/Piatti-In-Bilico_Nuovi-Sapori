@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="progect1" company="" webLink="http://" view-date="2025-03-24" view-index="0" gantt-divider-location="539" resource-divider-location="640" version="3.3.3316" locale="it_IT">
+<?xml version="1.0" encoding="UTF-8"?><project name="progect1" company="" webLink="http://" view-date="2025-06-27" view-index="0" gantt-divider-location="419" resource-divider-location="640" version="3.3.3316" locale="it_IT">
     <description/>
-    <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd10" name="ID" width="44" order="0"/>
-        <field id="tpd12" name="Costo" width="67" order="1"/>
-        <field id="tpd6" name="Durata" width="86" order="2"/>
-        <field id="tpd9" name="Predecessori" width="94" order="3"/>
-        <field id="tpd3" name="Nome" width="93" order="4"/>
-        <field id="tpd4" name="Data d'inizio" width="92" order="5"/>
-        <field id="tpd5" name="Data di fine" width="62" order="6"/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd10" name="ID" width="34" order="0"/>
+        <field id="tpd12" name="Costo" width="52" order="1"/>
+        <field id="tpd6" name="Durata" width="67" order="2"/>
+        <field id="tpd9" name="Predecessori" width="73" order="3"/>
+        <field id="tpd3" name="Nome" width="72" order="4"/>
+        <field id="tpd4" name="Data d'inizio" width="71" order="5"/>
+        <field id="tpd5" name="Data di fine" width="49" order="6"/>
         <field id="tpd15" name="Note" width="20" order="7"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelDown" value="advancement"/>
@@ -86,39 +86,37 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="dc89f30f51e04580b9ce62a85237cf20" name="organizzazione progetto" meeting="false" start="2025-04-01" duration="2" complete="0" thirdDate="2025-04-01" thirdDate-constraint="1" expand="true">
+        <task id="0" uid="dc89f30f51e04580b9ce62a85237cf20" name="organizzazione progetto e suddivisione ruoli" meeting="false" start="2025-06-30" duration="2" complete="0" thirdDate="2025-06-30" thirdDate-constraint="1" expand="true" cost-manual-value="100.0" cost-calculated="false">
             <depend id="1" type="2" difference="0" hardness="Strong"/>
             <depend id="2" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="1" uid="df1a18d6aaaa4204a9d814be01726dc4" name="Analisi e Design del Sistema" color="#00cc66" meeting="false" start="2025-04-03" duration="15" complete="0" expand="true">
+        <task id="1" uid="df1a18d6aaaa4204a9d814be01726dc4" name="Analisi e Design del Sistema" color="#00cc66" meeting="false" start="2025-07-02" duration="4" complete="0" expand="true" cost-manual-value="300.0" cost-calculated="false">
             <depend id="2" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="2" uid="a44707c52e0d4ee1a25e0ea012cdda5e" name="Implementazione Modulo Prenotazioni e Menu" meeting="false" start="2025-04-28" duration="8" complete="0" expand="true">
+        <task id="2" uid="a44707c52e0d4ee1a25e0ea012cdda5e" name="Implementazione Modulo Prenotazioni e Menu" meeting="false" start="2025-07-08" duration="5" complete="0" priority="2" expand="true" cost-manual-value="1000.0" cost-calculated="false">
             <depend id="3" type="2" difference="0" hardness="Strong"/>
             <depend id="4" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="3" uid="b367886cef924ba8a50b82e9f6b5c7a2" name="Sviluppo Funzionalità Avanzate" meeting="false" start="2025-05-09" duration="10" complete="0" expand="true">
+        <task id="3" uid="b367886cef924ba8a50b82e9f6b5c7a2" name="Sviluppo Funzionalità Avanzate" meeting="false" start="2025-07-15" duration="5" complete="0" priority="2" expand="true" cost-manual-value="2000.0" cost-calculated="false">
             <depend id="4" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="4" uid="27e2225b815d4ac983e6c410bcf96bb2" name="Testing Finale" meeting="false" start="2025-05-23" duration="5" complete="0" expand="true" cost-manual-value="1000.0" cost-calculated="false">
+        <task id="4" uid="27e2225b815d4ac983e6c410bcf96bb2" name="Testing Finale" meeting="false" start="2025-07-22" duration="1" complete="0" expand="true" cost-manual-value="500.0" cost-calculated="false">
             <depend id="5" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="5" uid="a97eaa1c70744a44b1c30f715d11aac7" name="Consegna Finale e Demo" meeting="false" start="2025-05-30" duration="1" complete="0" expand="true">
-            <task id="6" uid="110502fb44914aea88c1dfdbbe0549aa" name="attività_6" meeting="false" start="2025-05-30" duration="1" complete="0" expand="true"/>
-        </task>
+        <task id="5" uid="a97eaa1c70744a44b1c30f715d11aac7" name="Consegna Finale e Demo" meeting="false" start="2025-07-23" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Bodrito Tiago" function="Default:0" contacts="" phone="">
-            <rate name="standard" value="80"/>
+            <rate name="standard" value="100"/>
         </resource>
         <resource id="1" name="Vladislav Arnera" function="Default:0" contacts="" phone="">
-            <rate name="standard" value="200"/>
+            <rate name="standard" value="100"/>
         </resource>
         <resource id="2" name="Mattia Mazza" function="Default:0" contacts="" phone="">
             <rate name="standard" value="200"/>
         </resource>
         <resource id="3" name="Francesco MIgliardi" function="Default:0" contacts="" phone="">
-            <rate name="standard" value="100"/>
+            <rate name="standard" value="250"/>
         </resource>
     </resources>
     <allocations>
