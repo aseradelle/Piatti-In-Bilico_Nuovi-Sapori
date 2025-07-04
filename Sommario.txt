@@ -1,3 +1,4 @@
 Sono stati raggiunti quasi tutti i punti prefissati nel colloquio con il cliente, globalmente siamo rimasti soddisfatti del lavoro svolto in questo primo sprint.
 Ci sono delle parti da migliorare, come ad esempio alcune parti del css, fermo restando che tutto il codice è accessibile a blocchi in questa repository.
 Sarà fondamentale collegare in maniera ottimale il database con il codice, siccome i test sono stati eseguiti in una maniera locale.
+Verrà implementata una "scissione" del sito tra profili utente ed admin in base alla email e password durante la registrazione
