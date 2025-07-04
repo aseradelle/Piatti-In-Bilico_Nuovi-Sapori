@@ -153,57 +153,6 @@ footer {
     color: white;
     font-size: 16px;
 }
-/* Slider container */
-.custom-slider {
-  position: relative;
-  width: 600px;         /* larghezza desiderata */
-  height: 400px;        /* altezza desiderata */
-  margin: 30px auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-/* Image inside slider */
-.custom-slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-/* Show image */
-.custom-slider img.visible {
-  opacity: 1;
-}
-
-/* Arrows */
-.slider-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  color: white;
-  background: rgba(0,0,0,0.4);
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 4px;
-  user-select: none;
-  z-index: 10;
-}
-
-#prevArrow {
-  left: 10px;
-}
-
-#nextArrow {
-  right: 10px;
-}
-
-.slider-arrow:hover {
-  background: rgba(0,0,0,0.7);
-}
 /**/
 .menu-book-container {
   position: relative;
